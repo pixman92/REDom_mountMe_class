@@ -19,8 +19,8 @@ class MountMe{
   }
   
   printMe(){
-    console.log("Inner Text: ", this.inner);
-    console.log("Mounted at: ", this.mountPoint);
+    console.log(this.inner);
+    console.log(this.mountPoint);
   }
   
 }
