@@ -1,4 +1,4 @@
-// pull imports
+// pull imports 
 const {el, mount} = redom;
 
 // class that takes in 'el', 'inner', and 'mountPoint'
