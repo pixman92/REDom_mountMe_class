@@ -19,13 +19,13 @@ class MountMe{
     }
 
     innerMe = inner;
-    mountPointMe = mountPoint;
+    mountPoint = mountPoint;
     
   }
   
   printMe(){
-    console.log("Inner Text: ", innerMe);
-    console.log("Mounted at: ", mountPointMe);
+    console.log("Inner Text: ", inner);
+    console.log("Mounted at: ", mountPoint);
   }
   
 }

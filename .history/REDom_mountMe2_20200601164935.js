@@ -7,8 +7,8 @@ class MountMe{
   constructor(){
   }
     
-  innerMe = "";
-  mountPointMe="";
+  var inner = "";
+  var mou
   make(elMe, inner, mountPoint){
     var tmp = el(elMe, inner);
     console.log(mountPoint);
@@ -18,14 +18,12 @@ class MountMe{
    mount(document.querySelector(mountPoint), tmp);  
     }
 
-    innerMe = inner;
-    mountPointMe = mountPoint;
     
   }
   
   printMe(){
-    console.log("Inner Text: ", innerMe);
-    console.log("Mounted at: ", mountPointMe);
+    console.log("Inner Text: ", this.inner);
+    console.log("Mounted at: ", this.mountPoint);
   }
   
 }
