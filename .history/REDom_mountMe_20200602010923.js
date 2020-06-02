@@ -29,7 +29,7 @@ class MountMe{
     if(!this.mountPointMe){
       console.log(document.querySelector(this.mountPointMe));
     }
- }
+}
 }
 
 
