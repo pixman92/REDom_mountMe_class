@@ -27,12 +27,11 @@ class MountMe{
   
   printMe(idMe){
     console.log(idMe);
-    if(idMe == "" || idMe==''){
+    if(this.mountPointMe == "" || this.mountPointMe==''){
       for(var i=0; i<document.body.children.length; i++){
-        if(document.body.children[i].tagName=="DIV"){
-          console.log(document.body.children[i]);
-        }
+        
       }
+      console.log(document.body);
     }else{
       console.log(document.querySelector(this.mountPointMe));
     }
