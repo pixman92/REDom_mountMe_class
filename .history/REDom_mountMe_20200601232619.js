@@ -25,9 +25,10 @@ class MountMe{
     
   }
   
-  printMe(idMe){
-    console.log(idMe);
-    console.log(document.querySelector(this.mountPointMe));
+  printMe(index){
+    console.log('indexAt: '+index);
+    console.log("Inner Text: ", this.innerMe);
+    console.log("Mounted at: ", this.mountPointme);
   }
   
 }

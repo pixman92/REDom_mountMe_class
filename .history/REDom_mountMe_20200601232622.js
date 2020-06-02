@@ -25,7 +25,7 @@ class MountMe{
     
   }
   
-  printMe(idMe){
+printMe(idMe){
     console.log(idMe);
     console.log(document.querySelector(this.mountPointMe));
   }

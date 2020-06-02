@@ -21,13 +21,14 @@ class MountMe{
     }
 
     this.innerMe = inner;
-    this.mountPointMe = mountPoint;
+    this.mountPoint<m>e = mountPoint;
     
   }
   
-  printMe(idMe){
-    console.log(idMe);
-    console.log(document.querySelector(this.mountPointMe));
+  printMe(index){
+    console.log('indexAt: '+index);
+    console.log("Inner Text: ", this.innerMe);
+    console.log("Mounted at: ", this.mountPointme);
   }
   
 }
