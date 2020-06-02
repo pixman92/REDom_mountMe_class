@@ -26,7 +26,7 @@ class MountMe{
   }
   
   printMe(){
-    if(this.mountPointMe!=undefined||this.mountPointMe!=null || this.mountPointMe==''|| this.mountPointMe==""){
+    if(this.mountPointMe!=undefined||this.mountPointMe!=null || this.m){
       console.log(document.querySelector(this.mountPointMe));
     }
  }
