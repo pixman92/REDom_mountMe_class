@@ -13,7 +13,7 @@ class MountMe{
 
   make(elMe, inner, mountPoint){
     var tmp = el(elMe, inner);
-    console.log(mountPoint);
+    //console.log(mountPoint);
     if(mountPoint==""){
       mount(document.body, tmp);        // if left "" - then add to document.body
     }else{
@@ -26,7 +26,7 @@ class MountMe{
   }
   
   printMe(index){
-    console.log(index);
+    console.log('indexAt: '+index);
     console.log("Inner Text: ", this.innerMe);
     console.log("Mounted at: ", this.mountPointme);
   }
