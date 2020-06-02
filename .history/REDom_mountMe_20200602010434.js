@@ -25,10 +25,19 @@ class MountMe{
     
   }
   
-  printMe(){
-    if(!this.mountPointMe){
-      console.log(document.querySelector(this.mountPointMe));
+  printMe(idMe){
+    console.log(document.querySelector(this.mountPointMe));
+    
+      for(var i=0; i<document.body.children.length; i++){
+        if(document.body.children[i].tagName=="DIV"){
+          console.log(document.body.children[i]);
+        }
+      }
+    }else{
+      
     }
+  }
+  
 }
 
 

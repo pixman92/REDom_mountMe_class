@@ -25,19 +25,27 @@ class MountMe{
     
   }
   
-  printMe(){
-    if(!this.mountPointMe){
+  printMe(idMe){
+    console.log(idMe);
+    if(idMe == "" || idMe==''){
+      for(var i=0; i<document.body.children.length; i++){
+        if(document.body.children[i].tagName=="DIV"){
+          console.log(document.body.children[i]);
+        }
+      }
+    }else{
       console.log(document.querySelector(this.mountPointMe));
     }
+  }
+  
 }
 
 
-printBody(){
+print(idMe){
+  console.log(idMe);
   if(idMe == "" || idMe==''){
     for(var i=0; i<document.body.children.length; i++){
       if(document.body.children[i].tagName=="DIV"){
         console.log(document.body.children[i]);
       }
     }
-  }
-}

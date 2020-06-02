@@ -25,10 +25,17 @@ class MountMe{
     
   }
   
-  printMe(){
-    if(!this.mountPointMe){
+  printMe(idMe){
+      for(var i=0; i<document.body.children.length; i++){
+        if(document.body.children[i].tagName=="DIV"){
+          console.log(document.body.children[i]);
+        }
+      }
+    }else{
       console.log(document.querySelector(this.mountPointMe));
     }
+  }
+  
 }
 
 
