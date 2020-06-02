@@ -5,17 +5,11 @@ const {el, mount} = redom;
 // then mounts said 'el' onto 'mountPoint'
 class MountMe{
   constructor(){
-  }
-    
-  set innerMe(innerMe){
-    this.inner = innerMe;
-    
-  }
+  }  
 
-  set mountPointMe(mountPoint){
-    this.mount
-  }
-  
+  innerMe = inner;
+  mountPointme = mountPoint;
+
   make(elMe, inner, mountPoint){
     var tmp = el(elMe, inner);
     console.log(mountPoint);
@@ -25,14 +19,15 @@ class MountMe{
    mount(document.querySelector(mountPoint), tmp);  
     }
 
-    set innerMe(inner);
-    set mountPointMe(mountPoint);
+    var innerMe = inner;
+    var mountPointme = mountPoint;
     
   }
   
-  printMe(){
+  printMe(index){
+    console.log(index);
     console.log("Inner Text: ", innerMe);
-    console.log("Mounted at: ", mountPointMe);
+    console.log("Mounted at: ", mountPointme);
   }
   
 }
