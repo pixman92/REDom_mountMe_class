@@ -26,7 +26,7 @@ class MountMe{
   }
   
   printMe(){
-    if(this.mountPointMe!=undefined||this.mountPointMe!=null){
+    if(!this.mountPointMe){
       console.log(document.querySelector(this.mountPointMe));
     }
  }
@@ -34,9 +34,11 @@ class MountMe{
 
 
 function printBody(){
+  if(idMe == "" || idMe==''){
     for(var i=0; i<document.body.children.length; i++){
       if(document.body.children[i].tagName=="DIV"){
         console.log(document.body.children[i]);
       }
     }
+  }
 }

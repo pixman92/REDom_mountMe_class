@@ -26,7 +26,7 @@ class MountMe{
   }
   
   printMe(){
-    if(this.mountPointMe!=undefined||this.mountPointMe!=null){
+    if(!this.mountPointMe){
       console.log(document.querySelector(this.mountPointMe));
     }
  }
@@ -39,4 +39,5 @@ function printBody(){
         console.log(document.body.children[i]);
       }
     }
+  }
 }
