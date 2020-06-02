@@ -14,10 +14,10 @@ class MountMe{
   make(elMe, inner, mountPoint){
     var tmp = el(elMe, inner);
     //console.log(mountPoint);
-    if(mountPoint==""||mountPoint==''){
+    if(mountPoint==""){
       mount(document.body, tmp);        // if left "" - then add to document.body
     }else{
-       mount(document.querySelector(mountPoint), tmp);  
+   mount(document.querySelector(mountPoint), tmp);  
     }
 
     this.innerMe = inner;
@@ -27,11 +27,7 @@ class MountMe{
   
   printMe(idMe){
     console.log(idMe);
-    if(this.mountPointMe == "" || this.mountPointMe==''){
-      console.log(document.body);
-    }else{
-      console.log(document.querySelector(this.mountPointMe));
-    }
+    console.log(document.querySelector(this.mountPointMe));
   }
   
 }

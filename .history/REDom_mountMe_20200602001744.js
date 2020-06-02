@@ -29,9 +29,9 @@ class MountMe{
     console.log(idMe);
     if(this.mountPointMe == "" || this.mountPointMe==''){
       console.log(document.body);
-    }else{
-      console.log(document.querySelector(this.mountPointMe));
     }
+    }
+    console.log(document.querySelector(this.mountPointMe));
   }
   
 }
