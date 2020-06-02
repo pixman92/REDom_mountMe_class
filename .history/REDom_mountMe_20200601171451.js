@@ -7,8 +7,15 @@ class MountMe{
   constructor(){
   }
     
-  innerMe = "";
-  mountPointMe="";
+  set innerMe(innerMe){
+    this.inner = innerMe;
+    
+  }
+
+  set mountPointMe(mountPoint){
+    this.mount
+  }
+  
   make(elMe, inner, mountPoint){
     var tmp = el(elMe, inner);
     console.log(mountPoint);
@@ -18,8 +25,8 @@ class MountMe{
    mount(document.querySelector(mountPoint), tmp);  
     }
 
-    innerMe = inner;
-    mountPointMe = mountPoint;
+    set innerMe(inner);
+    set mountPointMe(mountPoint);
     
   }
   
