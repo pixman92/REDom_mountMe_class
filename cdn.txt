@@ -1,4 +1,9 @@
-<script src="https://cdn.jsdelivr.net/gh/pixman92/REDom_mountMe_class@2.6/REDom_mountMe.js"></script>
-
 //REDom script
 <script src="https://redom.js.org/redom.min.js"></script>
+
+
+// older version
+<script src="https://cdn.jsdelivr.net/gh/pixman92/REDom_mountMe_class@2.6/REDom_mountMe.js"></script>
+
+// latest release
+<script src="https://cdn.jsdelivr.net/gh/pixman92/REDom_mountMe_class/REDom_mountMe.js"></script>
