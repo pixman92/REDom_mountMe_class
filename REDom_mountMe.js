@@ -7,11 +7,10 @@ class MountMe{
   constructor(){
     this.innerMe=null;
     this.mountPointMe=null;
-  }  
-
-  
+  }   
 
   make(elMe, inner, mountPoint){
+    
     var tmp = el(elMe, inner);
     //console.log(mountPoint);
     if(mountPoint==""||mountPoint==''){
@@ -23,6 +22,14 @@ class MountMe{
     this.innerMe = inner;
     this.mountPointMe = mountPoint;
     
+    }
+  
+  addClass(query, classMe){
+    document.querySelector(query).setAttribute("class", classMe);
+  }
+
+  removeClass(query, classMe){
+    document.querySelector(query).classList.remove(classMe);
   }
   
   printMe(){
@@ -31,7 +38,6 @@ class MountMe{
     }
  }
 }
-
 
 function printBody(){
     for(var i=0; i<document.body.children.length; i++){
