@@ -9,3 +9,10 @@ REDOM made into a CLass operation
   
 - each time adding DIVs
 - each DIV being added to a specific HTML Query
+
+
+
+
+=======
+Code to change up Attributes of the REDom code
+- document.querySelector('').setAttribute('', '');
